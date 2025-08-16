@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎁 هدیه موسیقی</title>
+  <meta name="theme-color" content="#000000">
+  <style>
+    html, body { margin:0; height:100%; background:#000; color:#fff;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Naskh Arabic','IranSans',sans-serif; }
+    .wrap { min-height:100%; display:flex; align-items:center; justify-content:center; padding:24px; box-sizing:border-box; }
+    .card { width:100%; max-width:560px; background:#0a0a0a; border:1px solid #1a1a1a; border-radius:16px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.6); text-align:center; }
+    h1 { margin:0 0 12px; font-size:22px; font-weight:700; color:#f0f0f0; }
+    p  { margin:0 0 18px; font-size:15px; font-weight:500; color:#dcdcdc; }
+    audio { width:100%; outline:none; border-radius:12px; background:#111; }
+    .hint { margin-top:12px; font-size:12px; color:#8a8a8a; }
+    .btn { display:inline-block; margin-top:14px; padding:10px 16px; border:1px solid #333; border-radius:10px; text-decoration:none; color:#eee; background:#111; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>🎧 پخش هدیه</h1>
+      <p>این هدیه تقدیم به تو</p>
+      <audio id="player" controls preload="metadata">
+        <source src="gift.mp3" type="audio/mpeg">
+        مرورگر شما از پخش‌کنندهٔ صوتی پشتیبانی نمی‌کند.
+      </audio>
+      <div class="hint">اگر به‌صورت خودکار پخش نشد، یک‌بار روی «Play» بزن.</div>
+      <a class="btn" href="gift.mp3" download>دانلود مستقیم آهنگ</a>
+    </div>
+  </div>
+</body>
+</html>
